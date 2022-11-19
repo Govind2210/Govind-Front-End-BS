@@ -1,0 +1,31 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+.heading{
+    @apply text-white font-bold text-4xl md:text-5xl xl:text-6xl;
+}
+
+p {
+    @apply text-sm;
+    line-height: 1.8;
+}
+.showcase {
+    background: url("http://www.nasa.gov/sites/default/files/thumbnails/image/for_press_release.jpg") no-repeat center/cover;
+    height: calc(100vh - 0.1px);
+}
+
+.showcase .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 8rem 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
